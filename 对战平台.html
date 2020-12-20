@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9A对转平台</title>
+    <link rel="stylesheet" type="text/css" href="work.css">
+</head>
+<body background="xk2.jfif" onload="run();">
+    <div id="top">
+        <div id="logo"><img src=""></div>
+        <ul>
+            <a href="https://www.bilibili.com/video/av884780940/"><li>平台下载</li> </a>
+            <a href="https://www.csgo.com.cn/hd/1705/query/"><li>战绩查询</li></a>
+            <a href="https://tieba.baidu.com/f?fr=ala0&kw=csgo&tpl=5"><li>论坛</li></a>
+            
+            <li><input type="text" name="search" onfocus="chongzhi()"></li>
+        </ul>
+
+        <ul id="leg">
+            
+            <a href="https://mail.qq.com/"><li>登录</li></a>
+            <a href="注册系统.html"><li>注册</li> </a>
+            <li>下载APP</li>
+        </ul>
+        
+    </div>
+    <div id="Game">
+
+    <div class="node">
+        <ul>
+            <li> &nbsp; </li>
+            <a href="https://tieba.baidu.com/f?fr=ala0&kw=csgo&tpl=5"><li>9A PLUS</li></a>
+            <a href="https://www.5ewin.com/data"></a>
+            <a href="https://www.5ewin.com/tournament"><li>科技锦标赛</li></a>
+            <a href="https://www.5ewin.com/banned"><li>绿色封禁榜</li></a>
+            <a href="https://www.5ewin.com/mall"><li>账号购买</li></a>
+            <li>科技出售
+                <ul>
+                    <li>透视</li>
+                    <li>微自瞄</li>
+                    <li>暴力陀螺</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="midd">
+        <div id="box">
+            <img id="banner" alt="banner" src="1.jpg">
+            
+        </div>
+        <div id="box2">
+            <ul id="tanchuang">
+                <li class="DDD"> CSGO玩家从入门到科技</li>
+                <li class="DDD">科技选购指南</li>
+                <li class="DDD">如何规避VAC检测</li>
+                <li class="DDD">某E平台3000分科技心得</li>
+                <li class="DDD">某B平台2000分科技心得</li>
+                <li class="DDD">某美平台2000分科技心得</li>
+                <li class="DDD">某G平台大宇宙科技心得</li>
+                <li class="DDD"><a href="https://www.baidu.com/?tn=62095104_33_oem_dg">查看更多......</a></li>
+            </ul>
+            
+        </div>        
+    </div>
+
+    <div class="bottom">
+        <ul>
+            <li class="EEE"></a>网页制作人：小王小王</li>
+            <li class="EEE">特约设计师：夜风浅水</li>
+            <li class="EEE" id="Date"></li>          
+            <li class="EEE">版权声明</li>
+            <li class="EEE">本网站所描述内容纯属虚构</li>
+            <li class="EEE">转载或引用本网内容必须是以新闻性或资料性公共免费信息为使用目的的合理、善意引用，不得对本网内容原意进行曲解、修改，同时必须保留本网注明的"稿件来源"，并自负版权等法律责任。</li>            
+        </ul>
+    </div>
+
+
+   
+</body>
+
+<script type="text/javascript">
+    var banners = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+            var counter = 0;
+            function run(){
+                setInterval(cycle,1000);
+            }
+            function cycle(){
+                counter++;
+                if(counter == banners.length)    
+                    counter = 0;
+                document.getElementById("banner").src = banners[counter];
+            }
+        setInterval(function(){   
+        var date = new Date();   
+        var year = date.getFullYear();      
+        var mon = date.getMonth()+1;         
+        var da = date.getDate();             
+        var day = date.getDay();             
+        var h = date.getHours();             
+        var m = date.getMinutes();           
+        var s = date.getSeconds();
+        if (day == 0) {
+            day = 8;
+        }        
+        var d = document.getElementById('Date');    
+          d.innerHTML='当前时间:'+year+'年'+mon+'月'+da+'日'+'星期'+day+' '+h+':'+m+':'+s;  
+        },1000)
+        function chongzhi(){
+            alert("充值9A PLUS解锁搜索功能");
+            setTimeout(function(){alert("请尽快充值")}, 3000);
+            setTimeout(function(){alert("系统检测未充值，将于30秒后关闭")}, 30000);
+            setTimeout(function(){window.close("对战平台.html")}, 60000);
+        }
+
+    
+    
+</script>
+
+<html>
